@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# react-typescript-template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I will be glad to any suggestions and corrections :)
 
-## Available Scripts
+My email for contact - amir1isaev@gmail.com
 
-In the project directory, you can run:
+## Pages
 
-### `yarn start`
+RU: Эта папка содержит компоненты, которые формируются благодаря контейнерам и компонентам из папки Components, если в этом есть необходимость. Могут, как и контейнеры, взаимодействовать с сервисами.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Containers
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+RU: В этой папке хранятся компоненты, которые формируют некие контейнеры, которые, в дальнейшем, используются для формирования страниц, которые, к тому же, содержать в своей реализации компоненты остальных четырех групп и при этом взаимодействовать, каким-либо образом, с сервисами или сетью, если говорить обобщенно.
 
-### `yarn test`
+## Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Smart
 
-### `yarn build`
+RU: Эта папка содержит компоненты, которые могут использовать относительно серьезную логику, для отображения чего-либо
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Ordinary
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+RU: В этой папке хранятся компоненты, которые могут иметь какую-то логику, для отображения чего-либо.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Simple
 
-### `yarn eject`
+RU: В этой папке хранятся все вспомогательные, глупые компоненты, которые не должны использовать какие-либо пользовательские хуки или репозиторий. (Может использовать компоненты пользовательского интерфейса в своей реализации)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### UI
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+RU: В этой папке хранятся это те компоненты, которые заменяют нативные (стандартные) компоненты по типу: button, input, textarea, select и так далее.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Core
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+RU: Данная папка является "ядром" вашего приложения. В ней хранится все, для взаимодействия с сервером, глобальное хранилище, тема вашего приложения и т.д.
 
-## Learn More
+### Config
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+RU: В данной папке хранятся конфигурационные файлы приложения (например в ней можно хранить данные, необходимы для взаимодействия с бэкендом)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Constants
+
+RU: В данной папке находятся все константы, что используются в приложении (например сообщения об ошибках и предупреждениях)
+
+### Hooks
+
+RU: В данной папке хранятся все хуки кастомные хуки (хуки, что были сделаны вами).
+
+### Models
+
+RU: В данной папке хранятся модели, что приходят с бэкенда.
+
+### Store
+
+RU: В этой папке хранится контекст хранилища и глобальные схемы хранилища.
+
+### Theme (for styled-components)
+
+RU: В этой папке хранятся темы вашего проекта.
+
+### Types
+
+RU: В данной папке хранятся вспомогательные типы, а также декларации модулей.
+
+### Utils
+
+RU: В данной папке хранятся вспомогательные, простые, функции, которые могут использоваться в хуках, либо же компонентах.
