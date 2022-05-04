@@ -82,6 +82,12 @@ const CommonStyles = createGlobalStyle`
     font-weight: 400;
   }
 
+  #root{
+    min-height:100%;
+    display: flex;
+    flex-direction:column;
+  }
+
 
 `
 
